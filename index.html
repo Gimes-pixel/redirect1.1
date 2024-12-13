@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>URL Redirect</h1>
+    <p>Enter a URL to redirect to an about:blank page with an iframe.</p>
+    <form onsubmit="redirectToUrl(); return false;">
+        <input type="text" id="url" name="url" placeholder="https://example.com" required>
+        <button type="submit">Redirect</button>
+    </form>
+    <script src="redirect.js"></script>
+</body>
+</html>
