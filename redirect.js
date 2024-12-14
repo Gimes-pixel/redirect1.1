@@ -8,7 +8,7 @@ function redirectToUrl() {
 
         if (newWindow) {
             const iframe = newWindow.document.createElement('iframe');
-            iframe.src = `https://your-worker-subdomain.workers.dev?url=${encodeURIComponent(validUrl.href)}`;
+            iframe.src = `https://rapid-surf-91ca.nate-demento.workers.dev/?url=${encodeURIComponent(validUrl.href)}`;
             iframe.style.position = 'absolute';
             iframe.style.top = '0';
             iframe.style.left = '0';
